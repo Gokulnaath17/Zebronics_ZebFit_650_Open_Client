@@ -34,6 +34,10 @@ Two days of APK decompilation, BLE UUID hunting, packet decoding, endpoint disco
 
 Because apparently reverse-engineering an entire smartwatch was easier than finding a functioning companion app.
 
+## Demo
+
+![Demo](readmepic.png)
+
 ## What works
 
 * BLE discovery and connection
