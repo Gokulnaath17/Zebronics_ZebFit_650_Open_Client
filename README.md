@@ -1,4 +1,4 @@
-# Zebronics Zeb 650 Open Client
+# Zebronics Zebfit 650 Open Client
 
 ## Why does this exist?
 
