@@ -1,0 +1,6 @@
+[project]
+name = "zeb6502"
+version = "0.1.0"
+description = "Unofficial protocol + client for the Zebronics ZEB-FIT650 BLE watch"
+requires-python = ">=3.10"
+dependencies = ["textual>=8.2", "bleak>=3.0"]

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# local notes, not for distribution
+HANDOFF.md
+
+# not distributed: the original APK and its decompiled sources
+app/
+decompiled/
+tools/
