@@ -60,7 +60,6 @@ Because apparently reverse-engineering an entire smartwatch was easier than find
 | `bletest/main.py`     | CLI interface for scripting and testing                                                |
 | `bletest/test_tui.py` | Headless TUI smoke test — no watch required                                            |
                                                
-
 ## Requirements
 
 * Linux
@@ -191,6 +190,19 @@ Build an Android app. Make a GUI. Add features. Reverse-engineer the stuff I did
 **The protocol is yours now.**
 
 Go make the watch do something stupid.
+
+But this is a cheap watch. You didn't have to go this far.
+
+Yeah, I know.
+
+**That's not the fucking point.**
+
+I bought it. I own it. I'll decide when I don't need it anymore.
+
+You don't get to abandon the software and render perfectly fine hardware useless.
+
+**I'll decide when I'm done with my watch. Not you, Zebronics.**
+
 
 ## Legal
 
