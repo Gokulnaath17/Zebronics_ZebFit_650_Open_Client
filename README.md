@@ -6,9 +6,11 @@ If you own a **Zebronics Zebfit 650**, you already know.
 
 So I gave up looking for one.
 
-And instead, did a little BLE reverse engineering, a lot of packet decoding, and now the watch has an independent Linux client.
+Because obviously, when the app gets abandoned, the perfectly normal human response is to reverse engineer the fucking thing.
 
-Because apparently, setting the time required reverse-engineering the watch.
+After little BLE reverse engineering, a lot of packet decoding, the watch has an independent Linux client.
+
+Apparently, setting the time required reverse-engineering the watch.
 
 ## Demo
 
