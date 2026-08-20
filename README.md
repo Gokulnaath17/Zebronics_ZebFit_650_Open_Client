@@ -1,38 +1,14 @@
 # Zebronics Zebfit 650 Open Client
 
-## Why does this exist?
+If you own a **Zebronics Zebfit 650**, you already know.
 
-I have a **Zebronics Zebfit 650**, a perfectly functional watch.
+**No app. No way to do advanced stuff like setting time (on a watch).**
 
-The watch works.
-The Bluetooth works.
-The only problem?
+So I gave up looking for one.
 
-**Zebronics abandoned the app.**
+And instead, did a little BLE reverse engineering, a lot of packet decoding, and now the watch has an independent Linux client.
 
-The app disappeared from the Play Store, leaving owners to hunt for questionable APKs just to do something as advanced as... **setting the fucking time.**
-
-So this project started with:
-
-> **"I just fucking want to set the time."**
-
-Then:
-
-> "Oh. I need the app."
-
-> "The app isn't available."
-
-> "Fine, I'll find the APK."
-
-> "Wait, I don't trust some random APK with my data."
-
-> **"Fuck it. I'll do it myself."**
-
-Two days of APK decompilation, BLE UUID hunting, packet decoding, endpoint discovery, and questionable life choices later:
-
-**we have a working independent client.**
-
-Because apparently reverse-engineering an entire smartwatch was easier than finding a functioning companion app.
+Because apparently, setting the time required reverse-engineering the watch.
 
 ## Demo
 
@@ -90,13 +66,9 @@ Make sure the watch is disconnected from other devices and advertising.
 gettime
 ```
 
-"What time does this thing think it is?"
-
 ```text
 time
 ```
-
-"Okay, we're fixing that."
 
 ---
 
@@ -114,7 +86,7 @@ heart off
 
 Stops them.
 
-Congratulations, your abandoned smartwatch is now reporting its heartbeat to a Linux terminal.
+Congratulations, your abandoned smartwaT dtch is now reporting its heartbeat to a Linux terminal.
 
 ---
 
@@ -124,15 +96,9 @@ Congratulations, your abandoned smartwatch is now reporting its heartbeat to a L
 notify 7 "Dinner is ready"
 ```
 
-Sends a notification to the watch.
-
 ```text
 notify 0 "Incoming call"
 ```
-
-Sends a call-style notification.
-
-Because apparently the terminal is now your phone.
 
 ---
 
@@ -142,15 +108,11 @@ Because apparently the terminal is now your phone.
 sync
 ```
 
-Reads available data such as steps, distance and calories.
-
 ```text
 hist
 offline
 running
 ```
-
-For the brave: history and activity synchronization.
 
 ---
 
@@ -165,33 +127,9 @@ help
 
 The TUI also shows raw BLE frames alongside their decoded meaning, so you can see exactly what is being sent to and received from the watch.
 
-## Where I stop
+## But why ???
 
-The original mission was simple:
-
-**Set the time.**
-
-That somehow became:
-
-**Reverse-engineer the BLE protocol.**
-
-And then:
-
-**Send messages. Receive data. Build a TUI. Document everything.**
-
-That's enough for me.
-
-If you want to take it further:
-
-**Fork it. Break it. Improve it.**
-
-Build an Android app. Make a GUI. Add features. Reverse-engineer the stuff I didn't.
-
-**The protocol is yours now.**
-
-Go make the watch do something stupid.
-
-But this is a cheap watch. You didn't have to go this far.
+This is a cheap watch, and I didn't have to go this far.
 
 Yeah, I know.
 
@@ -199,7 +137,7 @@ Yeah, I know.
 
 I bought it. I own it. I'll decide when I don't need it anymore.
 
-You don't get to abandon the software and render perfectly fine hardware useless.
+They don't get to abandon the software and render perfectly fine hardware useless.
 
 **I'll decide when I'm done with my watch. Not you, Zebronics.**
 
