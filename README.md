@@ -2,7 +2,7 @@
 
 ## Why does this exist?
 
-I have a **Zebronics Zeb 650**, a perfectly functional watch.
+I have a **Zebronics Zebfit 650**, a perfectly functional watch.
 
 The watch works.
 The Bluetooth works.
