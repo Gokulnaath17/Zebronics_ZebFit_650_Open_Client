@@ -12,7 +12,7 @@ Because apparently, setting the time required reverse-engineering the watch.
 
 ## Demo
 
-![Demo](readmepic.png)
+![Demo](temp/dont%20open/Dont%20OPENN%20this/go%20away/seriously%20last%20chance/demo.png)
 
 ## What works
 
@@ -151,3 +151,5 @@ No proprietary app binaries or decompiled application code are distributed.
 Zebronics and Zeb 650 are referenced only to identify compatible hardware.
 
 **License: TBD**
+
+![Gus](temp/dont%20open/Dont%20OPENN%20this/go%20away/seriously%20last%20chance/gus.png)
