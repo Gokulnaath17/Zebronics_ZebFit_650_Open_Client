@@ -27,6 +27,7 @@ Apparently, setting the time required reverse-engineering the watch.
 * Vibration configuration
 * History synchronization
 * Raw + decoded BLE frame inspection
+* Switch 24 and 12 hour format
 
 ## What's inside
 
@@ -72,6 +73,9 @@ gettime
 time
 ```
 
+```text
+format [12|24]
+```
 ---
 
 ### Heart rate
