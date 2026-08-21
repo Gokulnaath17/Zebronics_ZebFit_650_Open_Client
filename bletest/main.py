@@ -23,6 +23,7 @@ Commands for `test`:
   ancs <idx> <flag> [title] [content]
                                   A4 ANCS push (multi-frame)
   vibrate       vibparams(2) + WhatsApp-style A4 push (full sequence)
+  timeformat    [12|24]           set watch time format (default: 24h)
   sweep <start> <end> [gap s]
                                   A4 pushes for each appIdx (icon probe)
   ota           FC 00 00           enter DFU mode (DANGEROUS)
@@ -154,6 +155,11 @@ def _build_cmd(name: str, extra: list[str]) -> bytes:
     if name == "vibparams":
         mode = int(extra[0], 0) if extra else 2
         return P.update_device_params(vibrate=mode)
+    if name == "timeformat":
+        fmt = extra[0] if extra else "24"
+        if fmt not in ("12", "24"):
+            raise SystemExit("timeformat: 12 or 24")
+        return P.update_device_params(is_24h=(fmt == "24"))
     if name == "ancs":
         return P.ancs_frames(int(extra[0], 0), int(extra[1], 0),
                              extra[2] if len(extra) > 2 else "",

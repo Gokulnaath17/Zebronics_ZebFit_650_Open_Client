@@ -41,6 +41,7 @@ COMMANDS: dict[str, tuple[str, str]] = {
     "bp": ("[on|off]", "blood pressure measurement"),
     "notify": ("<app> [title] [msg]", "push notification -> watch vibrates"),
     "vibmode": ("[0|1|2]", "vibration: 0 off, 1 on+anti-lost, 2 on"),
+    "timeformat": ("[12|24]", "set watch time format (default: 24h)"),
     "band": ("[mode]", "band mode flags (0x20 ring, 0x40 vibrate, 0x80 sleep)"),
     "hist": ("<week> <hour> <hours>", "begin history curve sync"),
     "offline": ("[unix_ts]", "offline history since timestamp"),
@@ -811,6 +812,11 @@ class ZebScreen(Screen):
             if mode not in (0, 1, 2):
                 raise ValueError("vibmode: 0 off, 1 on+anti-lost, 2 on")
             return P.update_device_params(vibrate=mode)
+        if name == "timeformat":
+            fmt = extra[0] if extra else "24"
+            if fmt not in ("12", "24"):
+                raise ValueError("timeformat: 12 or 24")
+            return P.update_device_params(is_24h=(fmt == "24"))
         if name == "band":
             m = int(extra[0], 0) if extra else 0x60
             return bytes([0xF4, 0x01, m, m])
